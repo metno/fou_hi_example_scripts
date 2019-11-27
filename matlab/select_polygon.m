@@ -16,6 +16,12 @@ function [t,u,v,lat,lon] = select_polygon(starttime, endtime, polylat, polylon, 
 % tified using a simple minimization method. For NorKyst 800m data this 
 % method implies an error in the position of O(500m).
 %
+% The output can be visualized using the "quiver" function, for example
+% 
+% >>> quiver(lon, lat, u(:,1), v(:,1))
+% 
+% shows the first field.
+%
 % SYNTAX:
 %
 % [t,u,v,lat,lon] = select_polygon(starttime, endtime, polylat, polylon, depth)
