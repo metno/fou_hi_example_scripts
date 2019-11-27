@@ -16,6 +16,13 @@ function [t,u,v,lat,lon] = select_polygon(starttime, endtime, polylat, polylon, 
 % tified using a simple minimization method. For NorKyst 800m data this 
 % method implies an error in the position of O(500m).
 %
+% Make sure that the polygon is entirely closed for meaningful output, 
+% that is, the first and last pairs of lat/lon values should be the same.
+% For an example of an area outside Bergen:
+%
+% >>> polylat = [60.67 60.67 60.03 60.03 60.67]; 
+% >>> polylon = [4.2 5.8 5.8 4.2 4.2];
+%
 % The output can be visualized using the "quiver" function, for example
 % 
 % >>> quiver(lon, lat, u(:,1), v(:,1))
@@ -30,8 +37,8 @@ function [t,u,v,lat,lon] = select_polygon(starttime, endtime, polylat, polylon, 
 % 
 % starttime - start time of series, Matlab "datenum"
 % endtime - end time of series, Matlab "datenum"
-% latin - latitude of position, decimal
-% lonin - longitude of position, decimal
+% polylat - list of latitudes, decimal degrees
+% polylon - list of longitudes, decimal degrees
 % depth - depth in meters (defined positive)
 % 
 % OUTPUT:
