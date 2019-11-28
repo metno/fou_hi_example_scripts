@@ -1,6 +1,8 @@
 ## Matlab scripts
 
-This folder contains the scripts
+The file "thredds_matlab-manual-YYYYMMDD.pdf" contains a short up-to-date manual with examples on how to use THREDDS and Matlab for accessing MET Norway's ocean model data. 
+
+This folder also contains the scripts
 
 - "N800_timeseries.m", which is used to extract hourly time series of the horizontal velocities from a specific location and at a specific depth.
 - "N800_depthprofile.m", which is used to extract hourly depth profiles of the horizontal velocities from a specific location.
