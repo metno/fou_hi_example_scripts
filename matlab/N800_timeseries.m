@@ -39,7 +39,7 @@ function [t,u,v] = N800_timeseries(starttime, endtime, latin, lonin, depthin)
 
 % Input files on THREDDS server. The "datafile" contains the velocities and
 % all the variables necessary for interpolation in time and space.
-datafile = 'http://thredds.met.no/thredds/dodsC/sea/norkyst800m/1h/aggregate_be';
+datafile = 'https://thredds.met.no/thredds/dodsC/sea/norkyst800m/1h/aggregate_be';
 
 % Get the time variable
 disp('Fetching time variable...')
