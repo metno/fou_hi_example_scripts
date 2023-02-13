@@ -41,7 +41,7 @@ function [t,depth,u,v] = N800_depthprofile(starttime, endtime, latin, lonin)
 % all the variables necessary for interpolation in time and space. The
 % "anglefile" contains the information needed to rotate the model u/v 
 % velocities to east/north.
-datafile = 'http://thredds.met.no/thredds/dodsC/sea/norkyst800m/1h/aggregate_be';
+datafile = 'https://thredds.met.no/thredds/dodsC/sea/norkyst800m/1h/aggregate_be';
 
 % Get the time variable
 disp('Fetching time variable...')
